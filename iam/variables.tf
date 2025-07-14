@@ -1,4 +1,5 @@
-variable "iam_user_name" {
-  default     = "anurag jha"
-  description = "The IAM username for Terraform operations"
+variable "aws_account_id" {
+  description = "AWS Account ID"
+  type        = string
+  default     = "702865854817"
 }
