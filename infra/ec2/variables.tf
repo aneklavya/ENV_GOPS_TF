@@ -1,15 +1,15 @@
-variable "env" { 
-    description = "Environment name" 
-    }
+variable "env" {
+  description = "Environment name"
+}
 variable "project" {
-    description = "Project name" 
-    }
+  description = "Project name"
+}
 variable "instance_name" {
-    description = "EC2 instance name" 
-    }
+  description = "EC2 instance name"
+}
 variable "region" {
-    description = "AWS region" 
-    }
+  description = "AWS region"
+}
 variable "s3_bucket_name" {
-    description = "Target S3 bucket name" 
-    }
+  description = "Target S3 bucket name"
+}

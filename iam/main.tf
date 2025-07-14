@@ -11,7 +11,7 @@ provider "aws" {
 # Create IAM Role for Terraform operations
 resource "aws_iam_role" "terraform_admin_role" {
   name = "terraform-admin-role"
-  
+
   assume_role_policy = jsonencode({
     Version = "2012-10-17"
     Statement = [
@@ -36,7 +36,7 @@ resource "aws_iam_role" "terraform_admin_role" {
 resource "aws_iam_policy" "terraform_admin_policy" {
   name        = "terraform-admin-policy"
   description = "Policy for Terraform administrative operations"
-  
+
   policy = jsonencode({
     Version = "2012-10-17"
     Statement = [
